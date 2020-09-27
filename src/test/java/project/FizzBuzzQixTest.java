@@ -13,11 +13,13 @@ public class FizzBuzzQixTest {
     }
     @Test
     public void threeShouldReturnFizz(){
-
         String spokenWord = underTest.interpret(3);
         assertThat(spokenWord).isEqualTo("Fizz");
     }
-//    @Test
-//    public void fiveShouldReturnBuzz()
+    @Test
+    public void fiveShouldReturnBuzz(){
+        String spokenWord = underTest.interpret(5);
+        assertThat(spokenWord).isEqualTo("Buzz");
+    }
 
 }
