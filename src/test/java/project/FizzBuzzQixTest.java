@@ -2,6 +2,8 @@ package project;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Scanner;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class FizzBuzzQixTest {
@@ -29,6 +31,18 @@ public class FizzBuzzQixTest {
     public void sevenShouldReturnQix() {
         String spokenWord = underTest.interpret(7);
         assertThat(spokenWord).isEqualTo("Qix");
+    }
+
+    @Test
+    public void nineShouldReturnFizz() {
+        String spokenWord = underTest.interpret(9);
+        assertThat(spokenWord).isEqualTo("Fizz");
+    }
+
+    @Test
+    public void fifteenShouldReturnFizzBuzz() {
+        String spokenWord = underTest.interpret(15);
+        assertThat(spokenWord).isEqualTo("FizzBuzz");
     }
 
 }
