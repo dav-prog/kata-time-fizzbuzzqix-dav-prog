@@ -2,6 +2,10 @@ package project;
 
 public class FizzBuzzQix {
     public String interpret(int numberToInterpret) {
-        return null;
+        if(numberToInterpret % 3 == 0){
+            return "Fizz";
+        }
+
+        return "" + numberToInterpret;
     }
 }
