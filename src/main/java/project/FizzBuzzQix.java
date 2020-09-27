@@ -3,6 +3,10 @@ package project;
 public class FizzBuzzQix {
     public String interpret(int numberToInterpret) {
 
+        if(numberToInterpret % 5 == 0 && numberToInterpret % 7 == 0){
+            return "BuzzQix";
+        }
+
         if(numberToInterpret % 3 == 0 && numberToInterpret % 7 == 0){
             return "FizzQix";
         }
