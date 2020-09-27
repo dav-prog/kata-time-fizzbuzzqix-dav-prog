@@ -3,15 +3,19 @@ package project;
 public class FizzBuzzQix {
     public String interpret(int numberToInterpret) {
 
-        if(numberToInterpret % 5 == 0 && numberToInterpret % 7 == 0){
+        if (numberToInterpret % 3 == 0 && numberToInterpret % 5 == 0 && numberToInterpret % 7 == 0) {
+            return "FizzBuzzQix";
+        }
+
+        if (numberToInterpret % 5 == 0 && numberToInterpret % 7 == 0) {
             return "BuzzQix";
         }
 
-        if(numberToInterpret % 3 == 0 && numberToInterpret % 7 == 0){
+        if (numberToInterpret % 3 == 0 && numberToInterpret % 7 == 0) {
             return "FizzQix";
         }
 
-        if (numberToInterpret % 3 == 0 && numberToInterpret % 5 == 0){
+        if (numberToInterpret % 3 == 0 && numberToInterpret % 5 == 0) {
             return "FizzBuzz";
         }
         if (numberToInterpret % 3 == 0) {
